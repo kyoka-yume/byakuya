@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+body{
+	font-size: 1.4rem;
+	letter-spacing: 0.05rem;
+	}
+
+section{
+	margin: 2rem;
+	}
+
+.text{
+	line-height: 1.6;
+	}
+
+.box strong{
+	padding: 0 0.3rem;
+	}
+
+.text a{
+	margin: 0 0.5rem;
+	}
+
+.text a::after{
+	margin-left: 0.2rem;
+	}
+
+#prof{
+	text-align: center;
+	margin: 3rem 2rem;
+	}
+
+/* ↓プロフィールアイコンのサイズ */
+#me img{
+	width: 15rem;
+	height: 15rem;
+	}
+
+#prof h1{
+	font-size: 2.3rem;
+	letter-spacing: 0.2rem;
+	margin: 1.6rem 0;
+	}
+
+#prof .text{
+	margin-bottom: 2rem;
+	padding: 0 1rem;
+	text-align: left;
+	}
+
+#social{
+	margin: 2rem 0 3rem;
+	}
+
+/* ↓SNSアイコンのサイズ */
+#social a{
+	font-size: 0.8rem;
+	margin-right: 1.5rem;
+	}
+
+#social a i{
+	width: 5rem;
+	height: 5rem;
+	font-size: 2.5rem;
+	line-height: 5rem;
+	margin-bottom: 0.5rem;
+	}
+
+.box{
+	padding: 0.5rem 2.5rem;
+	border-radius:1rem;
+	}
+
+.box h2{
+	font-size: 1.6rem;
+	letter-spacing: 0.15rem;
+	padding-bottom: 0.7rem;
+	border-bottom-width: 2px;
+	}
+
+.box h3{
+	margin: 1.5rem 0 -0.6rem;
+	font-size: 1.4rem;
+	padding-bottom: 0.6rem;
+	border-bottom-width: 2px;
+	}
+
+.box > *{
+	margin: 1.5rem 0;
+	}
+
+details > *{
+	margin: 1.5rem 0;
+	}
+
+dl,ul {
+	padding-left: 1.5rem;
+	line-height: 1.6;
+	}
+
+dt::before,
+li::before{
+	left: -1.5rem;
+	top: 0.2rem;
+	font-size: 0.9em;
+	}
+
+dd {
+	font-size: .95em;
+	margin-bottom: 1.3rem;
+	}
+
+ul{
+	column-gap: 3rem;
+	margin-bottom: 0.7rem !important;
+	}
+
+ul.m-column2{
+	column-count: 2;
+	}
+
+ul.m-column3{
+	column-count: 3;
+	}
+
+li{
+	margin-bottom: 1rem;
+	}
+	
+.book{
+	margin-bottom: 2rem;
+	}
+
+.book .hyoushi{
+	width: 35%;
+	margin: 0 1.2rem 0.8rem 0;
+	float:left;
+	}
+
+.book h4{
+	font-size: 1.6rem;
+	}
+
+.book p{
+	font-size: 1.3rem;
+	line-height: 1.4;
+	margin: 0.5rem 0;
+	}
+
+.book p.product{
+	font-size: 1rem;
+	margin: 0.6rem 0 -0.3rem;
+	}
+
+.book .order{
+	margin-top: 1rem;
+	}
+
+.book .order a{
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+	letter-spacing: 0.1rem;
+	border-width: 1.5px;
+	}
+
+.order a:nth-child(n + 2){
+	margin-left: 0.3rem;
+	}
+
+.res{
+	line-height: 1.6;
+	}
+
+.res q::before{
+	margin-right: 0.3rem;
+	}
+
+summary{
+	margin: 0;
+	height: 3rem;
+	line-height: 3rem;
+	letter-spacing: 0.2rem;
+	border-radius:1.5rem;
+	}
+
