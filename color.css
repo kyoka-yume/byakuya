@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* ↓ページ全体の背景色と文字色 */
+body{
+	background-color: #dbd0e6;
+	color: #233242;
+	}
+
+/* ↓ボックスの背景色 */
+.box{
+	background-color: #fff;
+	}
+
+/* ↓リンクテキストの文字色 */
+.text a{
+	color: #7058a3;
+	}
+
+/* ↓強調テキストの背景色 */
+.box strong{
+	background-color: #fef08c;
+	}
+
+/* ↓SNSリンクアイコンの奇数番目の背景色 */
+#social a:nth-child(odd) i{
+	background-color: #9079ad;
+	}
+
+/* ↓SNSリンクアイコンの偶数番目背景色 */
+#social a:nth-child(even) i{
+	background-color: #69b076;
+	}
+
+/* ↓大見出しの下線と一文字目の色 */
+.box h2{
+	border-bottom-color: #9079ad;
+	}
+
+.box h2::first-letter{
+	color: #9079ad;
+	}
+
+/* ↓小見出しの下線と一文字目の色 */
+.box h3{
+	border-bottom-color: #008c79;
+	}
+
+.box h3::first-letter{
+	color: #008c79;
+	}
+
+/* ↓リストの頭についてるやつの色 */
+dt::before,
+li::before{
+	color: #BFBFCF;
+	}
+
+/* ↓リンクの頭についてるやつの色 */
+.link dt::before,
+.link li::before{
+	color: #39B2BA;
+	}
+
+/* ↓本の詳細文字色*/
+.book p.product{
+	color: #47266e;
+	}
+
+/* ↓本の通販ボタンの色とボーダー色 */
+.book a{
+	color: #9079ad;
+	border-bottom-color: #9079ad;
+	}
+
+/* ↓返信の引用部分の文字色 */
+.res q{
+	color: #39B2BA;
+	}
+
+/* ↓返信折り畳みボタンの背景色と文字色 */
+summary{
+	background-color: #dbd0e6;
+	color: #7058a3;
+	}
