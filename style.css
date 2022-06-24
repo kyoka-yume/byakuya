@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;900&display=swap&subset=japanese);
+
+@media screen and (min-width: 769px) {
+	html{ font-size:62.5%;}}
+@media screen and (max-width: 768px) {
+	html{ font-size:90%;}}
+@media screen and (max-width: 500px) {
+	html{ font-size:62.5%;}}
+
+html{
+	scroll-behavior: smooth;
+	}
+
+body{
+	position: relative;
+	font-family: 'Noto Sans JP','Hiragino Kaku Gothic ProN', Meiryo,  sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	}
+
+a{
+	color: #233242;
+	}
+
+.box strong{
+	font-weight: 500;
+	}
+
+.text a{
+	text-decoration: underline;
+	font-weight: 500;
+	}
+
+.text a::after{
+	font-family: "Font Awesome 5 Free";
+	content: "\f35d";
+	font-weight: 600;
+	}
+
+#me img{
+	border-radius:50%;
+	object-fit:cover;
+	}
+
+#social a{
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+	}
+
+#social a:last-child{
+	margin-right: 0;
+	}
+
+#social a i{
+	display: block;
+	border-radius:50%;
+	}
+
+.box h2{
+	font-size: 2.3rem;
+	padding-bottom: 0.5rem;
+	border-bottom-style: solid;
+	}
+
+.box h3{
+	display: inline-block;
+	vertical-align: bottom;
+	font-weight: 600;
+	border-bottom-style: solid;
+	}
+
+dt,li{
+	position: relative;
+	font-weight: 500;
+	}
+
+dt {
+	font-weight: 600;
+	}
+
+dt::before,
+li::before{
+	position: absolute;
+	left: -2rem;
+	font-family: "Font Awesome 5 Free";
+	content: "\f058";
+	font-weight: bold;
+	}
+
+dt.like::before,
+li.like::before{
+	content: "\f004";
+	color: #F7576E;
+	}
+
+dt.dislike::before,
+li.dislike::before{
+	content: "\f7a9";
+	color: #8a6e83;
+	}
+
+.link dt::before,
+.link li::before{
+	content: "\f35d";
+	}
+
+.link li a{
+	text-decoration: underline;
+	}
+
+.book:last-child{
+	margin-bottom: 0;
+	}
+
+.book .hyoushi img{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	}
+
+.book h4{
+	font-weight: 500;
+	}
+
+.book p.product{
+	font-weight: 500;
+	}
+
+.order{
+	width: 100%;
+	display: flex;
+	align-content: space-between;
+	}
+
+.book .order a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	border-style: solid;
+	}
+
+.book .order a.soldout{
+	pointer-events: none;
+	border: none;
+	background-color: #ECECEC;
+	color: #aaa;
+	}
+
+.res q{
+	font-weight: 600;
+	}
+
+.res q::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f0e0";
+	font-weight: bold;
+	}
+
+summary{
+	display: block;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	}
+
+summary::-webkit-details-marker {
+	display: none;
+	}
+
+details[open] > * {
+	animation: fadeIn 0.5s ease;
+	}
+
+details[open] > summary {
+	display: none;
+	}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0; /* 透明 */
+		transform: translateY(-10px); /* 上から表示 */
+		}
+	100% {
+		opacity: 1;
+		transform: none;
+		}
+	}
+
+
+
+
+/* ↓float解除 */
+.book::after {
+	content: "";
+	display: table;
+	clear: both;
+	}
